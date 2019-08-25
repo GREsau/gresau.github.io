@@ -23,7 +23,7 @@ email: hello@graham.cool
 description: >- # this means to ignore newlines until "baseurl:"
   Miscellaneous ramblings from one specific developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://graham.cool" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: GREsau
 github_username:  GREsau
 permalink: /blog/:year/:month/:day/:title/
