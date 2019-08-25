@@ -11,6 +11,11 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+
+  <p class="subscribe">
+    <a href="{{ "/feed.xml" | relative_url }}">Subscribe via RSS</a> 📰 |
+    <a href="https://feedburner.google.com/fb/a/mailverify?uri=graham-esau&loc=en_US">Subscribe via email</a> 📧
+  </p>
   <ul class="post-list">
     {%- for post in site.posts -%}
     <li>
@@ -28,8 +33,6 @@ layout: default
     </li>
     {%- endfor -%}
   </ul>
-
-  <p class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}">Subscribe via RSS</a></p>
   {%- endif -%}
 
 </div>
