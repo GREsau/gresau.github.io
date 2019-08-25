@@ -28,6 +28,8 @@ twitter_username: GREsau
 github_username:  GREsau
 permalink: /blog/:year/:month/:day/:title/
 show_excerpts: true
+disqus:
+  shortname: graham-esau
 
 # Build settings
 theme: minima
