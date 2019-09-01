@@ -26,9 +26,15 @@ layout: default
           {{ post.title | escape }}
         </a>
       </h3>
-      {%- if site.show_excerpts -%}
-      {{ post.excerpt | truncatewords: 100 }}
-      <a class="post-read-more" href="{{ post.url | relative_url }}"> Continued...</a>
+      {%- if post.summary -%}
+      <p class="summary">
+        {{ post.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+      </p>
+      {% elsif post.excerpt %}
+      <p class="excerpt">
+        {{ post.excerpt | truncatewords: 50 | remove: '<p>' | remove: '</p>' }}
+        <a class="post-read-more" href="{{ post.url | relative_url }}"> Continued...</a>
+      </p>
       {%- endif -%}
     </li>
     {%- endfor -%}

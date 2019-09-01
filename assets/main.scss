@@ -4,8 +4,10 @@
 
 @import "minima";
 
-.post-read-more {
-    font-style: italic;
+.post-list > li {
+    padding: 10px 0 20px;
+    border-top: 1px solid #e8e8e8;
+    margin: 0;
 }
 
 .subscribe {
@@ -17,4 +19,17 @@
     padding: 5px 15px 0;
     background-color: #F1F1F1;
     border-radius: 15px;
+}
+
+.excerpt, .summary {
+    color: #828282;
+    font-style: italic;
+}
+
+a, a:visited {
+    color: #2a7ae2;
+}
+
+a code {
+    color: #23f;
 }
